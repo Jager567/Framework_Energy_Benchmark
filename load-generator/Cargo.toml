@@ -1,0 +1,16 @@
+[package]
+name = "load-generator"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.25.0", features = ["macros", "time", "rt-multi-thread"] }
+hyper = { version = "0.14.24", features = ["client", "runtime", "http1", "tcp", "stream"] }
+clap = { version = "4.1.8", features = ["derive", "env"] }
+
+
+[profile.release]
+lto = "fat"
+panic = "abort"

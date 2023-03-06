@@ -1,0 +1,6 @@
+[submodule "rapl-powertool"]
+	path = rapl-powertool
+	url = https://github.com/AaronvDiepen/rapl-powertool.git
+[submodule "FrameworkBenchmarks"]
+	path = FrameworkBenchmarks
+	url = https://github.com/Jager567/FrameworkBenchmarks.git
